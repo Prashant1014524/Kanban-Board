@@ -1,46 +1,44 @@
-Kanban Board
+# 📋 Kanban Board
 
-A simple task management board built with HTML, CSS, and JavaScript. Users can create, move, and delete tasks across different workflow stages.
+A simple and interactive **Kanban Task Management Board** built using **HTML, CSS, and Vanilla JavaScript**.
 
-🚀 Features
-Create tasks with title and description
-Assign tasks to To Do, In Progress, or Done
-Drag and drop tasks
-Delete tasks
-Dynamic task counting
-Dark-themed UI
-Modal-based task creation
-🛠️ Tech Stack
-HTML5
-CSS3
-Vanilla JavaScript
+The application allows users to create, organize, move, and delete tasks across different stages of a workflow.
 
-📂 Project Structure
+---
+
+## 🚀 Features
+
+- ➕ Create new tasks using a modal form
+- 📝 Add task title and description
+- 📌 Assign tasks to:
+  - To Do
+  - In Progress
+  - Done
+- 🔄 Drag and drop tasks between columns
+- 🗑️ Delete tasks
+- 🔢 Display task count for each column
+- 🎨 Clean dark-themed interface
+- ⚡ Dynamically create tasks using JavaScript
+- ✨ Visual feedback while dragging tasks
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| HTML5 | Structure of the application |
+| CSS3 | Styling, layout, modal and animations |
+| JavaScript | Logic, task management and interactions |
+
+---
+
+## 📂 Project Structure
+
+```text
 kanban-board/
+│
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
-🧠 Key Concepts
-DOM Manipulation
-Event Listeners
-Drag and Drop API
-Dynamic Element Creation
-Functions
-Arrays and Objects
-Basic State Management
-
-▶️ Run Locally
-Clone or download the repository.
-Open the project in VS Code.
-Open index.html using Live Server.
-🔮 Future Improvements
-Edit tasks
-Task priorities and due dates
-Search and filtering
-Categories/tags
-User authentication
-Backend API and database
-Mobile responsiveness
-📌 Learning Outcome
-Built to strengthen JavaScript DOM manipulation, event handling, drag-and-drop functionality, and dynamic UI development.
