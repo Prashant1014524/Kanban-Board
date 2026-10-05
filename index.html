@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,23 +14,40 @@
 
     <main>
 
-        <!-- Navigation -->
+        <!-- =========================
+             NAVIGATION
+        ========================= -->
+
         <nav>
+
             <div class="left">
                 Kanban
             </div>
 
             <div class="right">
-                <button>Add New Task</button>
+
+                <button id="add-task-btn">
+                    Add New Task
+                </button>
+
             </div>
+
         </nav>
 
 
-        <!-- Kanban Board -->
+        <!-- =========================
+             KANBAN BOARD
+        ========================= -->
+
         <section class="board">
 
-            <!-- To Do -->
-            <div class="task-column">
+
+            <!-- =========================
+                 TO DO
+            ========================= -->
+
+            <div id="todo" class="task-column">
+
                 <div class="heading">
 
                     <div class="left">
@@ -40,21 +55,39 @@
                     </div>
 
                     <div class="right">
-                        Count
+                       0
                     </div>
 
                 </div>
-                <div class="task">
-                    <h2>Task 1</h2>
-                    <p>Description for Task 1</p>
-                    <button>Delete</button>
+
+
+                <!-- Existing Task -->
+
+                <div draggable="true" class="task">
+
+                    <h2>
+                        Task 1
+                    </h2>
+
+                    <p>
+                        Description for Task 1
+                    </p>
+
+                    <button>
+                        Delete
+                    </button>
+
                 </div>
 
             </div>
 
 
-            <!-- In Progress -->
-            <div class="task-column">
+            <!-- =========================
+                 IN PROGRESS
+            ========================= -->
+
+            <div id="progress" class="task-column">
+
                 <div class="heading">
 
                     <div class="left">
@@ -62,15 +95,20 @@
                     </div>
 
                     <div class="right">
-                        Count
+                       0
                     </div>
 
                 </div>
+
             </div>
 
 
-            <!-- Done -->
-            <div class="task-column">
+            <!-- =========================
+                 DONE
+            ========================= -->
+
+            <div id="done" class="task-column">
+
                 <div class="heading">
 
                     <div class="left">
@@ -78,15 +116,75 @@
                     </div>
 
                     <div class="right">
-                        Count
+                       0
                     </div>
 
                 </div>
+
             </div>
+
 
         </section>
 
+
+        <!-- =========================
+             MODAL
+        ========================= -->
+
+        <div class="modal">
+
+            <div class="center">
+
+                <input
+                    id="task-title-input"
+                    type="text"
+                    placeholder="Task Title"
+                >
+
+
+                <textarea
+                    id="task-desc-input"
+                    placeholder="Task Description"
+                ></textarea>
+
+
+                <select id="task-status">
+
+                    <option value="todo">
+                        To Do
+                    </option>
+
+                    <option value="progress">
+                        In Progress
+                    </option>
+
+                    <option value="done">
+                        Done
+                    </option>
+
+                </select>
+
+
+                <button id="add-task-btn-modal">
+                    Add Task
+                </button>
+
+            </div>
+
+
+            <!-- Modal Background -->
+
+            <div class="bg"></div>
+
+        </div>
+
+
     </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
